@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/vendor/index.php"
+status = 200

@@ -1,0 +1,180 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#050505;
+  color:white;
+  padding:40px;
+}
+
+.terms-container{
+  max-width:1300px;
+  margin:auto;
+}
+
+/* HEADER */
+
+.terms-header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.terms-header img{
+  width:110px;
+  margin-bottom:20px;
+}
+
+.terms-header h1{
+  font-size:52px;
+  color:#f5c25c;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.terms-header h3{
+  font-size:22px;
+  color:white;
+  margin-bottom:20px;
+}
+
+.terms-header p{
+  max-width:900px;
+  margin:auto;
+  color:#aaa;
+  line-height:1.7;
+}
+
+/* TERMS */
+
+.terms-list{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+.term-card{
+  display:flex;
+  gap:25px;
+  background:#0c0c0c;
+  border:1px solid rgba(245,194,92,0.15);
+  border-radius:24px;
+  padding:30px;
+  transition:.3s;
+}
+
+.term-card:hover{
+  border-color:#f5c25c;
+  transform:translateY(-4px);
+}
+
+.term-number{
+  min-width:70px;
+  height:70px;
+  border-radius:50%;
+  background:rgba(245,194,92,0.08);
+  border:2px solid #f5c25c;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#f5c25c;
+  font-size:28px;
+  font-weight:700;
+}
+
+.term-content{
+  flex:1;
+}
+
+.term-content h2{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  font-size:30px;
+  margin-bottom:20px;
+  color:#f5c25c;
+}
+
+.term-content h2 i{
+  font-size:28px;
+}
+
+.term-content p{
+  color:#bbb;
+  line-height:1.8;
+  font-size:16px;
+}
+
+.term-content ul{
+  padding-left:20px;
+}
+
+.term-content li{
+  margin-bottom:12px;
+  color:#ccc;
+  line-height:1.7;
+}
+
+/* GRID */
+
+.term-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.term-box{
+  background:#111;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:22px;
+}
+
+.term-box h4{
+  color:#f5c25c;
+  margin-bottom:12px;
+  font-size:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  body{
+    padding:20px;
+  }
+
+  .term-card{
+    flex-direction:column;
+  }
+
+  .term-grid{
+    grid-template-columns:1fr;
+  }
+
+  .terms-header h1{
+    font-size:36px;
+  }
+
+  .term-content h2{
+    font-size:24px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .term-number{
+    width:60px;
+    height:60px;
+    font-size:22px;
+  }
+
+  .terms-header h1{
+    font-size:28px;
+  }
+
+}
